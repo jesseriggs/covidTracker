@@ -6,6 +6,7 @@ name: Node.js CI
 on:
   push:
     branches: [ jesseriggs-patch-1 ]
+    paths: 'web/the-better-covid-tracker'
   pull_request:
     branches: [ jesseriggs-patch-1 ]
 
