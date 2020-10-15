@@ -24,9 +24,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: cd web/
-        | ls -a
-        | cd the-better-covid-tracker/
+    - run: |
+        cd web/
+        ls -a
+        cd the-better-covid-tracker/
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
